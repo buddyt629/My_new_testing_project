@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.androiduiwidgetsform">
+    package="com.example.androiduiwidgetsthree">
 
     <application
         android:allowBackup="true"
@@ -8,13 +8,9 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AndroidUiWidgetsForm">
+        android:theme="@style/Theme.AndroidUiWidgetsThree">
         <activity
-            android:name=".ToggleBtnSwitchDemo"
-            android:exported="false"/>
-
-        <activity
-            android:name=".SpinnerDemo"
+            android:name=".TimePickerDemoTwo"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,9 +18,32 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
-            android:name=".MyForm"
+            android:name=".TimePickerDemoOne"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DatePickerDemoTwo"
+            android:exported="false" />
+        <activity
+            android:name=".DatePickerDemoOne"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RatingBarDemo"
+            android:exported="false" />
+        <activity
+            android:name=".ImgBtnDemo"
             android:exported="false" />
     </application>
 
